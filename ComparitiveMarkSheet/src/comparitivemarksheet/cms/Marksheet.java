@@ -4,13 +4,14 @@
  * and open the template in the editor.
  */
 package comparitivemarksheet.cms;
+
 import java.util.Scanner;
+
 /**
  *
  * @author Dell
  */
 public class Marksheet {
-
 
     /**
      * @param args the command line arguments
@@ -25,8 +26,7 @@ public class Marksheet {
         String[] students = {"Ribusha", "Ramesh"};
         String[] subjects = {"English", "Nepali", "Maths", "Science", "Social"};
         double[] marks = new double[subjects.length];
-        double[] totals=new double[subjects.length];
-       
+        double[] totals = new double[subjects.length];
 
         for (int i = 0; i < students.length; i++) {
             System.out.println("Enter the name of Student " + students[i]);
@@ -34,18 +34,17 @@ public class Marksheet {
             for (int j = 0; j < subjects.length; j++) {
                 System.out.println("Enter Marks for " + subjects[j]);
                 marks[j] = input.nextDouble();
-                total= total + marks[j];
-               
+                total = total + marks[j];
+
             }
-            for(int t=0; t<totals.length;t++){
-                totals[t]=total;
-                 if (total < 160) {
+            for (int t = 0; t < totals.length; t++) {
+                totals[t] = total;
+                if (total < 160) {
                     System.out.println("Sorry,You've failed :|");
 
                 } else {
                     System.out.println("Congratulation!You've passed :D");
 
-                    
                     System.out.println("Your total marks is " + totals[t]);
 
                     percentage = (total / 500) * 100;
@@ -58,16 +57,16 @@ public class Marksheet {
                         System.out.println("You've acheived First Division");
                     } else if (percentage >= 45 && percentage < 60) {
                         System.out.println("You've achieved Second Division");
-                    } else if(percentage >= 32 && percentage < 45) {
+                    } else if (percentage >= 32 && percentage < 45) {
                         System.out.println("Babu,dherai gali khane vayoou");
-
+                        break;
                     }
                 }
-                total=0;
-                
-               
+                total = 0;
+                break;
+
             }
-           
+
 //            for (int j = 0; j < subjects.length; j++) {
 //
 //                if (marks[j] < 32) {
@@ -98,11 +97,6 @@ public class Marksheet {
 //                }
 //
 //            }
-
         }
     }
 }
-
-    
-    
-

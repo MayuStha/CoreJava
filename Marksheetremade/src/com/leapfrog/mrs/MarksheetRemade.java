@@ -22,6 +22,7 @@ public class MarksheetRemade {
 
         String[] students = {"Ram", "Sita", "Hari", "Shyam"};
         String[] subjects = {"English", "Nepali", "Math", "Science"};
+       // String header= String.format("%10s%10s%%n",students , subjects );
         double[][] marks = new double[students.length][subjects.length];
         double total = 0;
         double percentage = 0;
@@ -32,7 +33,7 @@ public class MarksheetRemade {
             System.out.print("Enter the marks obtained by " + students[i]);
 
             for (int j = 0; j < subjects.length; j++) {
-                System.out.print(" in " + subjects[j] + ":");
+                System.out.println(" in " + subjects[j] + ":");
                 marks[i][j] = input.nextDouble();
 
                 total = total + marks[i][j];
@@ -47,11 +48,12 @@ public class MarksheetRemade {
 
                         //  System.out.println("Congratulations!! You Have Passed");
                         if (totals[t] >= (32 * subjects.length)) {
-                            System.out.println("Congratulations!! You have Passed");
+
+                            System.out.println("Congratulations!! You have Passed :D");
                             System.out.println("Your Toal is" + totals[t]);
 
                             percentage = (totals[t] / (100 * subjects.length) * 100);
-                            System.out.println("Your Percentage is "+ percentage);
+                            System.out.println("Your Percentage is " + percentage);
 
                             if (percentage > 80) {
                                 System.out.println("You Have Achived Distinction");
@@ -62,17 +64,23 @@ public class MarksheetRemade {
                             } else if (percentage >= 32 && percentage < 45) {
                                 System.out.println("Bro.... You have my Condolence");
                             }
-                            break;
+                            
+                            total = 0;
+                            
 
                         }
+                        
                     } else {
                         System.out.println("Sorry, You Have Failed");
 
                     }
+
                 }
 
             }
 
         }
+        System.exit(0);
+
     }
 }
