@@ -10,45 +10,45 @@ package com.leapfrog.foj.entity;
  * @author Dell
  */
 public abstract class Clocks {
-    private int BatchNo;
-    private int Mfd;
-    private String Owner;
-    private double Price;
-
-   
+    private int batchNo;
+    private int mfd;
+    private String owner;
+    private double price;
 
     public int getBatchNo() {
-        return BatchNo;
+        return batchNo;
     }
 
-    public void setBatchNo(int BatchNo) {
-        this.BatchNo = BatchNo;
+    public void setBatchNo(int batchNo) {
+        this.batchNo = batchNo;
     }
 
     public int getMfd() {
-        return Mfd;
+        return mfd;
     }
 
-    public void setMfd(int Mfd) {
-        this.Mfd = Mfd;
+    public void setMfd(int mfd) {
+        this.mfd = mfd;
     }
 
     public String getOwner() {
-        return Owner;
+        return owner;
     }
 
-    public void setOwner(String Owner) {
-        this.Owner = Owner;
+    public void setOwner(String owner) {
+        this.owner = owner;
     }
 
     public double getPrice() {
-        return Price;
+        return price;
     }
 
-    public void setPrice(double Price) {
-        this.Price = Price;
+    public void setPrice(double price) {
+        this.price = price;
     }
-    
+
+   
+
     
     
 }

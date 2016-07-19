@@ -10,43 +10,44 @@ package com.leapfrog.foj.entity;
  * @author Dell
  */
 public abstract class ExtinctAnimals {
-    private String Name;
-    private String ExtinctionDate;
-    private int Size;
-    private String Habitat;
+    private String name;
+    private String extinctionDate;
+    private int size;
+    private String habitat;
 
     public String getName() {
-        return Name;
+        return name;
     }
 
-    public void setName(String Name) {
-        this.Name = Name;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getExtinctionDate() {
-        return ExtinctionDate;
+        return extinctionDate;
     }
 
-    public void setExtinctionDate(String ExtinctionDate) {
-        this.ExtinctionDate = ExtinctionDate;
+    public void setExtinctionDate(String extinctionDate) {
+        this.extinctionDate = extinctionDate;
     }
 
     public int getSize() {
-        return Size;
+        return size;
     }
 
-    public void setSize(int Size) {
-        this.Size = Size;
+    public void setSize(int size) {
+        this.size = size;
     }
 
     public String getHabitat() {
-        return Habitat;
+        return habitat;
     }
 
-    public void setHabitat(String Habitat) {
-        this.Habitat = Habitat;
+    public void setHabitat(String habitat) {
+        this.habitat = habitat;
     }
-    
+
+   
     
     
 }

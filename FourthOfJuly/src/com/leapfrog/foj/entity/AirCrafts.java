@@ -39,6 +39,9 @@ public abstract class AirCrafts {
         this.capacity = capacity;
     }
     
+    public void fly(){
+        System.out.println(name + " is being Flown");
+    }
     
     
 }

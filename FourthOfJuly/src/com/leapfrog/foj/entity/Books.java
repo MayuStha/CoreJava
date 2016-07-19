@@ -11,7 +11,10 @@ package com.leapfrog.foj.entity;
  */
 public abstract class  Books {
     private String name;
-    private int Batchno;
+    private int batchno;
+    private String nameOfAurthor;
+    private String price;
+    private String date;
 
     public String getName() {
         return name;
@@ -22,13 +25,40 @@ public abstract class  Books {
     }
 
     public int getBatchno() {
-        return Batchno;
+        return batchno;
     }
 
-    public void setBatchno(int Batchno) {
-        this.Batchno = Batchno;
+    public void setBatchno(int batchno) {
+        this.batchno = batchno;
     }
+
+    public String getNameOfAurthor() {
+        return nameOfAurthor;
+    }
+
+    public void setNameOfAurthor(String nameOfAurthor) {
+        this.nameOfAurthor = nameOfAurthor;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public abstract void read() ;
+        
     
-    public abstract void read();
 
+ 
 }

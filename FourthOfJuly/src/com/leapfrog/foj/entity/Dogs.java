@@ -11,10 +11,10 @@ package com.leapfrog.foj.entity;
  */
 public abstract class Dogs {
     private String name;
-    private String Owner;
-    private int Age;
+    private String owner;
+    private int age;
     private double price;
-    private String Size;
+    private String size;
 
     public String getName() {
         return name;
@@ -25,19 +25,19 @@ public abstract class Dogs {
     }
 
     public String getOwner() {
-        return Owner;
+        return owner;
     }
 
-    public void setOwner(String Owner) {
-        this.Owner = Owner;
+    public void setOwner(String owner) {
+        this.owner = owner;
     }
 
     public int getAge() {
-        return Age;
+        return age;
     }
 
-    public void setAge(int Age) {
-        this.Age = Age;
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public double getPrice() {
@@ -49,13 +49,13 @@ public abstract class Dogs {
     }
 
     public String getSize() {
-        return Size;
+        return size;
     }
 
-    public void setSize(String Size) {
-        this.Size = Size;
+    public void setSize(String size) {
+        this.size = size;
     }
-    
-    
+
+   
     
 }
